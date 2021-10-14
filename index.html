@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="LearningChinese">
+
+<head>
+    <title>Learning Chinese</title>
+    <meta charset="utf-8" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&amp;subset=greek,greek-ext,latin-ext" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.min.js"></script>
+
+    <script type="text/javascript" src="application.js"></script>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+
+<body>
+    <div class="mainpage" ng-controller="MainController">
+        <div class="centrecolumn">
+            <h1 class="maintitle"><a href="#/">Learning Chinese</a></h1>
+            <div ng-if="activityType == 'multipleChoiceWords'" class="multiplechoice">
+                <div class="multiplechoice-question"><span lang="zh">{{questionText}}</span></div>
+                <div class="multiplechoicewords-choices">
+                    <div ng-repeat="choice in choices" ng-click="choose(choice)" ng-class="choice.class" class="multiplechoice-choice">{{choice.text}}</div>
+                </div>
+            </div>
+            <div ng-if="activityType == 'multipleChoiceSentences'" class="multiplechoice">
+                <div class="multiplechoice-question"><span lang="zh">{{questionText}}</span></div>
+                <div class="multiplechoicesentences-choices">
+                    <div ng-repeat="choice in choices" ng-click="choose(choice)" ng-class="choice.class" class="multiplechoice-choice">{{choice.text}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
