@@ -11,6 +11,127 @@ application.directive("compile", ["$compile", function ($compile) {
     };
 }]);
 
+function randomise(array) {
+    var i = array.length;
+    var j = 0;
+
+    while (i > 0) {
+        j = Math.floor(Math.random() * i);
+        i--;
+
+        k = array[j];
+        array[j] = array[i];
+        array[i] = k;
+    }
+
+    return array;
+}
+
+function chooseRandom(array){
+    var i = Math.round(Math.random() * (array.length - 1));
+
+    return array[i];
+}
+
+class MultipleChoiceQuestion {
+    constructor(){
+        this.text = "";
+        this.correctAnswer = "";
+        this.incorrectAnswers = [];
+    }
+
+    getSetOfChoices(maximumNumberOfChoices = 5){
+        if (maximumNumberOfChoices < 2){
+            maximumNumberOfChoices = 2;
+        }
+
+        choices = randomise(this.incorrectAnswers.map(a => {return {
+            "text":a,
+            "isCorrect": false 
+        }})).slice(maximumNumberOfChoices - 1);
+
+        choices.push({
+            "text": this.correctAnswer,
+            "isCorrect": true
+        });
+
+        return choices;
+    }
+}
+
+class MultipleChoiceQuestionGenerator {
+    constructor(){
+        this.chineseParameterSets = [];
+        this.chineseCorrectAnswer = "";
+        this.chineseIncorrectAnswers = [];
+
+        this.chineseRomanisationParameterSets = [];
+        this.chineseRomanisationCorrectAnswer = "";
+        this.chineseRomanisationIncorrectAnswers = [];
+
+        this.englishParameterSets = [];
+        this.englishCorrectAnswer = "";
+        this.englishIncorrectAnswers = [];
+    }
+
+    applyParameters(text, parameters){   
+        for (var i = 0; i < parameters.length; i++){
+            var j = i + 1;
+            text = text.replace("{" + j.toString() + "}", parameters[i]);
+        }
+
+        return text;
+    }
+
+    generateQuestion(language1 = "chinese", language2 = "english"){
+        var parameterSetIndex = Math.round(Math.random() * (this.chineseParameterSets.length - 1));
+
+        var question = new MultipleChoiceQuestion();
+
+        if (language1 == "chinese"){
+            question.text = this.applyParameters(this.chineseCorrectAnswer, this.chineseParameterSets[parameterSetIndex]);
+        }
+        else if (language1 == "chineseRomanisation"){
+            question.text = this.applyParameters(this.chineseRomanisationCorrectAnswer, this.chineseRomanisationParameterSets[parameterSetIndex]);
+        }
+        else if (language1 == "english"){
+            question.text = this.applyParameters(this.englishCorrectAnswer, this.englishParameterSets[parameterSetIndex]);
+        }
+
+        if (language2 == "chinese"){
+            question.correctAnswer = this.applyParameters(this.chineseCorrectAnswer, this.chineseParameterSets[parameterSetIndex]);
+            question.incorrectAnswers = this.chineseIncorrectAnswers.map(a => this.applyParameters(a, this.chineseParameterSets[parameterSetIndex]));
+        }
+        else if (language2 == "chineseRomanisation"){
+            question.correctAnswer = this.applyParameters(this.chineseRomanisationCorrectAnswer, this.chineseRomanisationParameterSets[parameterSetIndex]);
+            question.incorrectAnswers = this.chineseRomanisationIncorrectAnswers.map(a => this.applyParameters(a, this.chineseRomanisationParameterSets[parameterSetIndex]));
+        }
+        else if (language2 == "english"){
+            question.correctAnswer = this.applyParameters(this.englishCorrectAnswer, this.englishParameterSets[parameterSetIndex]);
+            question.incorrectAnswers = this.englishIncorrectAnswers.map(a => this.applyParameters(a, this.englishParameterSets[parameterSetIndex]));
+        }
+
+        return question;
+    }
+}
+
+class QuestionGenerator1 extends MultipleChoiceQuestionGenerator {
+    constructor(){
+        this.chineseParameterSets = [["图书馆", "银行", "书店", "水果店"], ["开门", "关门"]];
+        this.chineseCorrectAnswer = "{1}几点{2}";
+        this.chineseIncorrectAnswers = [];
+
+        this.chineseRomanisationParameterSets = [];
+        this.chineseRomanisationCorrectAnswer = "";
+        this.chineseRomanisationIncorrectAnswers = [];
+
+        this.englishParameterSets = [["library", "bank", "book shop", "fruit shop"], ["open", "close"]];
+        this.englishCorrectAnswer = "What time does the {1} {2}?"
+        this.englishIncorrectAnswers = [];
+    }
+
+}
+
 var content = {
     "lessons": [
         {
@@ -168,46 +289,110 @@ var content = {
                                 "What time does the museum close?"]
                         },
                         {
-                            "text": "",
-                            "correctAnswer": "",
-                            "incorrectAnswers": ["", "", ""]
+                            "text": "图书馆什么时候开门",
+                            "correctAnswer": "When does the library open?",
+                            "incorrectAnswers": [
+                                "When does the library close?", 
+                                "When does the book shop open?", 
+                                "When does the book shop close?", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                ""
+                            ]
+                        },
+                        {
+                            "text": "图书馆什么时候关门",
+                            "correctAnswer": "When does the library close?",
+                            "incorrectAnswers": [
+                                "When does the library open?", 
+                                "When does the book shop open?", 
+                                "When does the book shop close?", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                ""
+                            ]
+                        },
+                        {
+                            "text": "银行什么时候开门",
+                            "correctAnswer": "When does the bank open?",
+                            "incorrectAnswers": [
+                                "When does the bank close?", 
+                                "When does the library open?", 
+                                "When does the library close?", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                ""
+                            ]
+                        },
+                        {
+                            "text": "银行什么时候关门",
+                            "correctAnswer": "When does the bank close?",
+                            "incorrectAnswers": [
+                                "When does the bank open?", 
+                                "When does the library open?", 
+                                "When does the library close?", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                ""
+                            ]
                         },
                         {
                             "text": "",
                             "correctAnswer": "",
-                            "incorrectAnswers": ["", "", ""]
+                            "incorrectAnswers": [
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                ""
+                            ]
                         },
                         {
                             "text": "",
                             "correctAnswer": "",
-                            "incorrectAnswers": ["", "", ""]
-                        },
-                        {
-                            "text": "",
-                            "correctAnswer": "",
-                            "incorrectAnswers": ["", "", ""]
+                            "incorrectAnswers": [
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                "", 
+                                ""
+                            ]
                         },
                     ]
                 }
             ]
         }
     ]
-}
-
-function randomise(array) {
-    var i = array.length;
-    var j = 0;
-
-    while (i > 0) {
-        j = Math.floor(Math.random() * i);
-        i--;
-
-        k = array[j];
-        array[j] = array[i];
-        array[i] = k;
-    }
-
-    return array;
 }
 
 application.controller("MainController", ["$scope", "$rootScope", "$routeParams", "$timeout", function MainController($scope, $rootScope, $routeParams, $timeout) {
@@ -222,12 +407,12 @@ application.controller("MainController", ["$scope", "$rootScope", "$routeParams"
 
     $scope.newQuestion = function () {
         var words = content.lessons[0].activities[1].sentences;
-        words = words.filter(w => w.text != "");
+        words = words.filter(w => w.text != "" && w.correctAnswer != "" && w.incorrectAnswers.filter(a => a != "").length > 0);
 
         var i = Math.round(Math.random() * (words.length - 1));
         var word = words[i];
 
-        var choices = randomise(word.incorrectAnswers.map(a => {
+        var choices = randomise(word.incorrectAnswers.filter(a => a != "").map(a => {
             return {
                 "text": a,
                 "isCorrect": false,
