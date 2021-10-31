@@ -1,373 +1,11 @@
 {
-    "title": "Runes - Part 1",
+    "title": "Hiragana - Part 1",
     "activities": [
         {
-            "type": "letters",
+            "type": "syllables",
             "letters": [
                 {
-                    "text": "ᚠ",
-                    "correctAnswers": [
-                        "f"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚢ",
-                    "correctAnswers": [
-                        "u"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚦ",
-                    "correctAnswers": [
-                        "þ",
-                        "th"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚩ",
-                    "correctAnswers": [
-                        "o",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚱ",
-                    "correctAnswers": [
-                        "r",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚳ",
-                    "correctAnswers": [
-                        "c",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚷ",
-                    "correctAnswers": [
-                        "g",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚹ",
-                    "correctAnswers": [
-                        "w",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚻ",
-                    "correctAnswers": [
-                        "h",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚾ",
-                    "correctAnswers": [
-                        "n",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛁ",
-                    "correctAnswers": [
-                        "i",
-                        "ee"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛡ",
-                    "correctAnswers": [
-                        "j",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛄ",
-                    "correctAnswers": [
-                        "j",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛇ",
-                    "correctAnswers": [
-                        "ï",
-                        "i"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛈ",
-                    "correctAnswers": [
-                        "p",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛉ",
-                    "correctAnswers": [
-                        "x",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛋ",
-                    "correctAnswers": [
-                        "s",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚴ",
-                    "correctAnswers": [
-                        "s",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛏ",
-                    "correctAnswers": [
-                        "t",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛒ",
-                    "correctAnswers": [
-                        "b",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛖ",
-                    "correctAnswers": [
-                        "e",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛗ",
-                    "correctAnswers": [
-                        "m",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛚ",
-                    "correctAnswers": [
-                        "l",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛝ",
-                    "correctAnswers": [
-                        "ng",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛟ",
-                    "correctAnswers": [
-                        "œ",
-                        "oe"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛞ",
-                    "correctAnswers": [
-                        "d",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚪ",
+                    "text": "あ",
                     "correctAnswers": [
                         "a",
                         ""
@@ -381,23 +19,9 @@
                     ]
                 },
                 {
-                    "text": "ᚫ",
+                    "text": "い",
                     "correctAnswers": [
-                        "æ",
-                        "ae"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛠ",
-                    "correctAnswers": [
-                        "ea",
+                        "i",
                         ""
                     ],
                     "incorrectAnswers": [
@@ -409,56 +33,9 @@
                     ]
                 },
                 {
-                    "text": "ᚣ",
+                    "text": "う",
                     "correctAnswers": [
-                        "y",
-                        ""
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                }
-            ]
-        },
-        {
-            "type":"inputTextWords",
-            "letters":[
-                {
-                    "text": "ᛏᚱᛖᚩᚹ",
-                    "correctAnswers": [
-                        "treow",
-                        "treów"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᚹᚫᛏᛖᚱ",
-                    "correctAnswers": [
-                        "waeter",
-                        "wæter"
-                    ],
-                    "incorrectAnswers": [
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ]
-                },
-                {
-                    "text": "ᛞᛖᚾᚢ",
-                    "correctAnswers": [
-                        "denu",
+                        "u",
                         ""
                     ],
                     "incorrectAnswers": [
@@ -470,9 +47,9 @@
                     ]
                 },
                 {
-                    "text": "ᛋᚹᛖᚩᚱᛞ",
+                    "text": "え",
                     "correctAnswers": [
-                        "sweord",
+                        "e",
                         ""
                     ],
                     "incorrectAnswers": [
@@ -484,9 +61,289 @@
                     ]
                 },
                 {
-                    "text": "ᛚᚪᚷᚢ",
+                    "text": "お",
                     "correctAnswers": [
-                        "lagu",
+                        "o",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "か",
+                    "correctAnswers": [
+                        "ka",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "き",
+                    "correctAnswers": [
+                        "ki",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "く",
+                    "correctAnswers": [
+                        "ku",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "け",
+                    "correctAnswers": [
+                        "ke",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "こ",
+                    "correctAnswers": [
+                        "ko",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "さ",
+                    "correctAnswers": [
+                        "sa",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "し",
+                    "correctAnswers": [
+                        "shi",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "す",
+                    "correctAnswers": [
+                        "su",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "せ",
+                    "correctAnswers": [
+                        "se",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "そ",
+                    "correctAnswers": [
+                        "so",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "た",
+                    "correctAnswers": [
+                        "ta",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "ち",
+                    "correctAnswers": [
+                        "",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "chi",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "つ",
+                    "correctAnswers": [
+                        "tsu",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "て",
+                    "correctAnswers": [
+                        "te",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "と",
+                    "correctAnswers": [
+                        "to",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "な",
+                    "correctAnswers": [
+                        "na",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "に",
+                    "correctAnswers": [
+                        "ni",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "ぬ",
+                    "correctAnswers": [
+                        "nu",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "ね",
+                    "correctAnswers": [
+                        "ne",
+                        ""
+                    ],
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "の",
+                    "correctAnswers": [
+                        "no",
                         ""
                     ],
                     "incorrectAnswers": [
@@ -510,7 +367,12 @@
                         "",
                         ""
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "type":"inputTextWords",
+            "letters":[
                 {
                     "text": "",
                     "correctAnswers": [

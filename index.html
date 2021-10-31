@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="mainpage" ng-controller="MainController">
+    <div class="mainpage" ng-controller="MainController" ng-keydown="keyDown($event)">
         <div class="centrecolumn">
             <h1 class="maintitle"><a href="#/">Learning Chinese</a></h1>
             <div ng-if="activityType == 'multipleChoiceWords'" class="multiplechoice">
@@ -33,6 +33,12 @@
                 <div class="multiplechoicesentences-choices">
                     <div ng-repeat="choice in choices" ng-click="choose(choice)" ng-class="choice.class" class="multiplechoice-choice">{{choice.text}}</div>
                 </div>
+            </div>
+            <div ng-if="activityType == 'letters'" class="inputtext">
+                <div class="inputtext-question"><span>{{question.text}}</span></div>
+                <div class="inputtext-answer">
+        <input type="text" class="inputtext-answerbox" ng-model="studentAnswer.text" /></div>
+        {{answer}}
             </div>
         </div>
     </div>

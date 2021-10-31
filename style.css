@@ -5,6 +5,10 @@ body {
     color: #202020;
 }
 
+:root {
+    --main-blue:#105ecc;
+}
+
 :lang(zh) {
     font-family: "Microsoft YaHei";
     font-weight: normal;
@@ -38,7 +42,7 @@ p {
 }
 
 a {
-    color: #105ecc;
+    color: var(--main-blue) ;
     text-decoration: none;
 }
 
@@ -46,12 +50,12 @@ a:hover {
     text-decoration: underline;
 }
 
-.multiplechoice {
+.multiplechoice, .inputtext {
     margin: 3em 0em;
     font-size: 22px;
 }
 
-.multiplechoice-question {
+.multiplechoice-question, .inputtext-question {
     text-align: center;
     font-size: 1.5em;
 }
@@ -109,4 +113,26 @@ a:hover {
     background-color: hsla(30, 80%, 50%, 1);
     border: 1px solid hsla(30, 80%, 40%, 1);
     color: white;
+}
+
+.inputtext-answer {
+    margin: 2em 0em;
+    text-align: center;
+}
+
+.inputtext-answerbox {
+   font-family: inherit;
+   font-weight: inherit;
+   font-size: inherit;
+   padding: 0.5em 1em; 
+   text-align: center;
+   border: 1px solid hsl(0, 0%, 80%);
+   border-radius: 2px;
+   outline:none;
+}
+
+.inputtext-answerbox:focus {
+    border: 1px solid var(--main-blue);
+    outline:none;
+
 }

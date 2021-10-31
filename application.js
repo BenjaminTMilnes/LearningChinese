@@ -59,84 +59,93 @@ class MultipleChoiceQuestion {
     }
 }
 
-class MultipleChoiceQuestionGenerator {
+class Lesson {
     constructor(){
-        this.chineseParameterSets = [];
-        this.chineseCorrectAnswer = "";
-        this.chineseIncorrectAnswers = [];
-
-        this.chineseRomanisationParameterSets = [];
-        this.chineseRomanisationCorrectAnswer = "";
-        this.chineseRomanisationIncorrectAnswers = [];
-
-        this.englishParameterSets = [];
-        this.englishCorrectAnswer = "";
-        this.englishIncorrectAnswers = [];
+        this.title = "";
+        this.activities = [];
     }
 
-    applyParameters(text, parameters){   
-        for (var i = 0; i < parameters.length; i++){
-            var j = i + 1;
-            text = text.replace("{" + j.toString() + "}", parameters[i]);
-        }
+    static fromObject (o){
+        var lesson = new Lesson();
 
-        return text;
+        lesson.title = o.title;
+
+        o.activities.forEach(a => {
+            if (a.type == "letters" || a.type == "inputTextWords" || a.type == "syllables"){
+                lesson.activities.push(LettersActivity.fromObject(a));
+            }
+        });
+
+        return lesson;
+    }
+}
+
+class Activity {
+    constructor(type){
+        this.type = type;
+    }
+}
+
+class LettersActivity extends Activity {
+    constructor(){
+        super("letters");
+
+        this.letters = [];
     }
 
-    generateQuestion(language1 = "chinese", language2 = "english"){
-        var parameterSetIndex = Math.round(Math.random() * (this.chineseParameterSets.length - 1));
+    static fromObject(o){
+        var activity = new LettersActivity();
 
-        var question = new MultipleChoiceQuestion();
+        o.letters.forEach(l => {
+            if (l.text != "" && l.correctAnswers.filter(ca => ca != "").length > 0){
+            activity.letters.push(InputTextQuestion.fromObject(l));
+            }
+        });
 
-        if (language1 == "chinese"){
-            question.text = this.applyParameters(this.chineseCorrectAnswer, this.chineseParameterSets[parameterSetIndex]);
-        }
-        else if (language1 == "chineseRomanisation"){
-            question.text = this.applyParameters(this.chineseRomanisationCorrectAnswer, this.chineseRomanisationParameterSets[parameterSetIndex]);
-        }
-        else if (language1 == "english"){
-            question.text = this.applyParameters(this.englishCorrectAnswer, this.englishParameterSets[parameterSetIndex]);
-        }
+        return activity;
+    }
 
-        if (language2 == "chinese"){
-            question.correctAnswer = this.applyParameters(this.chineseCorrectAnswer, this.chineseParameterSets[parameterSetIndex]);
-            question.incorrectAnswers = this.chineseIncorrectAnswers.map(a => this.applyParameters(a, this.chineseParameterSets[parameterSetIndex]));
-        }
-        else if (language2 == "chineseRomanisation"){
-            question.correctAnswer = this.applyParameters(this.chineseRomanisationCorrectAnswer, this.chineseRomanisationParameterSets[parameterSetIndex]);
-            question.incorrectAnswers = this.chineseRomanisationIncorrectAnswers.map(a => this.applyParameters(a, this.chineseRomanisationParameterSets[parameterSetIndex]));
-        }
-        else if (language2 == "english"){
-            question.correctAnswer = this.applyParameters(this.englishCorrectAnswer, this.englishParameterSets[parameterSetIndex]);
-            question.incorrectAnswers = this.englishIncorrectAnswers.map(a => this.applyParameters(a, this.englishParameterSets[parameterSetIndex]));
-        }
+    getRandomQuestion(){
+        return chooseRandom(this.letters);
+    }
+
+
+}
+
+class Question {
+    constructor(){
+        this.text = "";
+    }
+}
+
+class InputTextQuestion extends Question {
+    constructor(){
+        super();
+
+        this.correctAnswers = [];
+    }
+
+    static fromObject(o){
+        var question = new InputTextQuestion();
+
+        question.text = o.text;
+        question.correctAnswers = o.correctAnswers.filter(ca => ca != "");
 
         return question;
     }
-}
 
-class QuestionGenerator1 extends MultipleChoiceQuestionGenerator {
-    constructor(){
-        this.chineseParameterSets = [["图书馆", "银行", "书店"], ["开门", "关门"]];
-        this.chineseCorrectAnswer = "{1}几点{2}";
-        this.chineseIncorrectAnswers = [];
-
-        this.chineseRomanisationParameterSets = [];
-        this.chineseRomanisationCorrectAnswer = "";
-        this.chineseRomanisationIncorrectAnswers = [];
-
-        this.englishParameterSets = [["library", "bank", "book shop"], ["open", "close"]];
-        this.englishCorrectAnswer = "What time does the {1} {2}?";
-        this.englishIncorrectAnswers = [
-            "Where is the {1}?"
-        ];
+    isCorrectAnswer(answer){
+        return this.correctAnswers.filter(ca => ca == answer).length > 0;
     }
-
 }
 
-application.controller("MainController", ["$scope", "$rootScope", "$routeParams", "$timeout", function MainController($scope, $rootScope, $routeParams, $timeout) {
+application.controller("MainController", ["$scope", "$rootScope", "$routeParams", "$http", "$timeout", function MainController($scope, $rootScope, $routeParams, $http, $timeout) {
 
-    $scope.activityType = ""
+    $scope.lesson = null;
+    $scope.activity = null;
+    $scope.question = null;
+    $scope.studentAnswer = {};
+
     $scope.questionText = "";
     $scope.choices = [];
     $scope.showAnswers = false;
@@ -145,7 +154,10 @@ application.controller("MainController", ["$scope", "$rootScope", "$routeParams"
     $scope.a12 = new Audio("a1-2.mp3");
 
     $scope.newQuestion = function () {
-        var words = content.lessons[0].activities[0].words;
+        $scope.question = $scope.activity.getRandomQuestion();
+        $scope.activityType = "letters";
+        
+      /*  var words = content.lessons[0].activities[0].words;
         words = words.filter(w => w.text != "" && w.correctAnswer != "" && w.incorrectAnswers.filter(a => a != "").length > 0);
 
         var i = Math.round(Math.random() * (words.length - 1));
@@ -167,7 +179,23 @@ application.controller("MainController", ["$scope", "$rootScope", "$routeParams"
 
         $scope.activityType = "multipleChoiceWords"
         $scope.questionText = word.text;
-        $scope.choices = randomise(choices);
+        $scope.choices = randomise(choices);*/
+    }
+
+    $scope.checkAnswer = function(){
+        if ( $scope.question.isCorrectAnswer($scope.studentAnswer.text)){
+            $scope.a11.play();
+        }
+        else {
+            $scope.a12.play();           
+
+        }
+
+
+        $timeout(function () {
+            $scope.studentAnswer.text = "";
+            $scope.newQuestion();
+        }, 1200);
     }
 
     $scope.choose = function (choice) {
@@ -197,7 +225,7 @@ application.controller("MainController", ["$scope", "$rootScope", "$routeParams"
             }
         });
 
-        $scope.$digest();
+  $scope.$digest();
 
         $timeout(function () {
             $scope.newQuestion();
@@ -205,7 +233,7 @@ application.controller("MainController", ["$scope", "$rootScope", "$routeParams"
 
     }
 
-    document.onkeydown = function (e) {
+    $scope.keyDown = function (e) {
         if (e.code == "Digit1" && $scope.choices.length > 0) {
             $scope.choose($scope.choices[0]);
             e.preventDefault();
@@ -226,8 +254,21 @@ application.controller("MainController", ["$scope", "$rootScope", "$routeParams"
             $scope.choose($scope.choices[4]);
             e.preventDefault();
         }
+        if (e.code == "Enter") {
+            $scope.checkAnswer();
+            e.preventDefault();
+        }
     }
 
+    $http.get("japanese-hiragana-part-1.lesson.json?x=" + Date.now().toFixed(0)).then(function(response){
+        $scope.lesson = Lesson.fromObject(response.data);
+$scope.activity = $scope.lesson.activities[0];
+
+console.log($scope.lesson);
+
+        
     $scope.newQuestion();
+    });
+
 
 }]);
