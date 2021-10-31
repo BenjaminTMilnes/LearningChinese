@@ -1,0 +1,160 @@
+{
+    "title":"Runes - Part 1",
+    "activities":[
+        {
+            "type": "letters",
+            "letters":[
+        {
+            "text":"ᚠ",
+            "correctAnswers":["f"],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚢ",
+            "correctAnswers":["u"],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚦ",
+            "correctAnswers":["þ", "th"],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚩ",
+            "correctAnswers":["o", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚱ",
+            "correctAnswers":["r", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚳ",
+            "correctAnswers":["c", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚷ",
+            "correctAnswers":["g", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚹ",
+            "correctAnswers":["w", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚻ",
+            "correctAnswers":["h", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚾ",
+            "correctAnswers":["n", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛁ",
+            "correctAnswers":["i", "ee"],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛡ",
+            "correctAnswers":["j", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛄ",
+            "correctAnswers":["j", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛇ",
+            "correctAnswers":["ï", "i"],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛈ",
+            "correctAnswers":["p", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛉ",
+            "correctAnswers":["x", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛋ",
+            "correctAnswers":["s", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚴ",
+            "correctAnswers":["s", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛏ",
+            "correctAnswers":["t", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛒ",
+            "correctAnswers":["b", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛖ",
+            "correctAnswers":["e", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛗ",
+            "correctAnswers":["m", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛚ",
+            "correctAnswers":["l", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛝ",
+            "correctAnswers":["ng", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛟ",
+            "correctAnswers":["œ", "oe"],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛞ",
+            "correctAnswers":["d", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚪ",
+            "correctAnswers":["a", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚫ",
+            "correctAnswers":["æ", "ae"],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᛠ",
+            "correctAnswers":["ea", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        },
+        {
+            "text":"ᚣ",
+            "correctAnswers":["y", ""],
+            "incorrectAnswers":["", "", "", "", ""]
+        }
+            ]
+        }
+    ]
+}

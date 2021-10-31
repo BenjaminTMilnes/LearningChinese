@@ -1,0 +1,377 @@
+{
+    "title": "The Weather - Part 1",
+    "activities": [
+        {
+            "type": "multipleChoiceWords",
+            "fromLanguage": "korean",
+            "toLanguage": "english",
+            "words": [
+                {
+                    "text": "맑다",
+                    "correctAnswer": "to be clear",
+                    "incorrectAnswers": [
+                        "to be cloudy",
+                        "to rain",
+                        "to snow",
+                        "to be windy"
+                    ]
+                },
+                {
+                    "text": "흐리다",
+                    "correctAnswer": "to be cloudy",
+                    "incorrectAnswers": [ 
+                        "to be clear",
+                        "to rain",
+                        "to snow",
+                        "to be windy"
+                    ]
+                },
+                {
+                    "text": "비가 오다",
+                    "correctAnswer": "to rain",
+                    "incorrectAnswers": [ 
+                        "to be cloudy",
+                        "to be clear",
+                        "to snow",
+                        "to be windy"
+                    ]
+                },
+                {
+                    "text": "바람이 불다",
+                    "correctAnswer": "to be windy",
+                    "incorrectAnswers": [ 
+                        "to be cloudy",
+                        "to be clear",
+                        "to snow",
+                        "to rain"
+                    ]
+                },
+                {
+                    "text": "눈이 오다",
+                    "correctAnswer": "to snow",
+                    "incorrectAnswers": [ 
+                        "to be cloudy",
+                        "to be clear",
+                        "to rain",
+                        "to be windy"
+                    ]
+                },
+                {
+                    "text": "비",
+                    "correctAnswer": "rain",
+                    "incorrectAnswers": [ 
+                        "snow", 
+                        "wind", 
+                        "hail", 
+                        "sleet"
+                    ]
+                },
+                {
+                    "text": "바람",
+                    "correctAnswer": "wind",
+                    "incorrectAnswers": [ 
+                        "rain", 
+                        "snow", 
+                        "hail", 
+                        "sleet"
+                    ]
+                },
+                {
+                    "text": "불다",
+                    "correctAnswer": "to blow",
+                    "incorrectAnswers": [ 
+                        "to fall", 
+                        "to come"
+                    ]
+                },
+                {
+                    "text": "많이",
+                    "correctAnswer": "a lot",
+                    "incorrectAnswers": [ 
+                        "not very much"
+                    ]
+                },
+                {
+                    "text": "봄",
+                    "correctAnswer": "spring",
+                    "incorrectAnswers": [ 
+                        "summer", 
+                        "autumn", 
+                        "winter"
+                    ]
+                },
+                {
+                    "text": "여름",
+                    "correctAnswer": "summer",
+                    "incorrectAnswers": [ 
+                        "spring", 
+                        "autumn", 
+                        "winter"
+                    ]
+                },
+                {
+                    "text": "가을",
+                    "correctAnswer": "autumn",
+                    "incorrectAnswers": [ 
+                        "spring", 
+                        "summer", 
+                        "winter"
+                    ]
+                },
+                {
+                    "text": "겨울",
+                    "correctAnswer": "winter",
+                    "incorrectAnswers": [ 
+                        "spring", 
+                        "summer", 
+                        "autumn"
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [ 
+                        "", 
+                        "", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [ 
+                        "", 
+                        "", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [ 
+                        "", 
+                        "", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [ 
+                        "", 
+                        "", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [ 
+                        "", 
+                        "", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                }
+            ]
+         },
+         {"type":"multipleChoiceSentences",
+        "sentences":[
+            {
+                "text": "지금 비가 옵니께?",
+                "correctAnswer": "Is it raining at the moment?",
+                "incorrectAnswers": [ 
+                    "Is it snowing at the moment?", 
+                    "What's the weather like today?", 
+                    "Is it going to rain tomorrow?", 
+                    "Is it going to snow tomorrow?"
+                ]
+            },
+            {
+                "text": "비가 오고 바람도 불어요.",
+                "correctAnswer": "It's raining and it's windy.",
+                "incorrectAnswers": [ 
+                    "It's raining.", 
+                    "It's snowing.", 
+                    "It's very cloudy and windy.", 
+                    "It's very windy."
+                ]
+            },
+            {
+                "text": "오늘 날씨가 어때요?",
+                "correctAnswer": "What's the weather like today?",
+                "incorrectAnswers": [ 
+                    "What's the weather going to be like tomorrow?", 
+                    "What was the weather like yesterday?", 
+                    "Is it going to rain today?", 
+                    "Is it going to snow today?"
+                ]
+            },
+            {
+                "text": "눈이 많이 와요.",
+                "correctAnswer": "It's snowing a lot.",
+                "incorrectAnswers": [ 
+                    "It's raining a lot.", 
+                    "It's very windy.", 
+                    "It's very cold.", 
+                    "It's very wet."
+                ]
+            },
+            {
+                "text": "한국은 봄, 여름, 가을, 겨울이 있습니다.",
+                "correctAnswer": "Korea has spring, summer, autumn, and winter.",
+                "incorrectAnswers": [ 
+                    "Korea has summer, autumn, and winter.", 
+                    "Korea has spring, summer, and winter.", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "봄은 날씨가 따뜻합니다",
+                "correctAnswer": "In spring, the weather is warm.",
+                "incorrectAnswers": [ 
+                    "In spring, the weather is hot.", 
+                    "In spring, the weather is cold.", 
+                    "In spring, the weather is cool.", 
+                    "In spring, it rains a lot.", 
+                    "In spring, it's very windy.",
+                    "In summer, the weather is hot.",
+                    "In summer, the weather is warm."
+                ]
+            },
+            {
+                "text": "꽃도 만히 핍니다",
+                "correctAnswer": "Many flowers blossom.",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "여름은 덥고 비가 만히 옵니다.",
+                "correctAnswer": "Summer is warm, and there is a lot of rain.",
+                "incorrectAnswers": [ 
+                    "Summer is warm, and there isn't much rain.", 
+                    "Spring is warm, and there is a lot of rain.", 
+                    "Autumn is warm, and there is a lot of rain.", 
+                    "Summer is warm, and it's very windy.", 
+                    ""
+                ]
+            },
+            {
+                "text": "가을은 날씨가 맑고 좋습니다.",
+                "correctAnswer": "In autumn, the weather is very nice.",
+                "incorrectAnswers": [ 
+                    "In spring, the weather is very nice.", 
+                    "In summer, the weather is very nice.", 
+                    "In autumn, it's very wet.", 
+                    "In autumn, it rains a lot.", 
+                    ""
+                ]
+            },
+            {
+                "text": "겨울은 춥습니다.",
+                "correctAnswer": "In winter, it is cold.",
+                "incorrectAnswers": [ 
+                    "In winter, it is wet.", 
+                    "In winter, it rains a lot.", 
+                    "In winter, it snows a lot.", 
+                    "In autumn, it is cold.", 
+                    ""
+                ]
+            },
+            {
+                "text": "바람이 불고 눈도 많이 옵니다.",
+                "correctAnswer": "It's windy and there's a lot of snow.",
+                "incorrectAnswers": [ 
+                    "It's windy.", 
+                    "There is a lot of snow.", 
+                    "There is a lot of rain.", 
+                    "There is a lot of rain and snow.", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            }
+
+        ]}
+        ]
+}

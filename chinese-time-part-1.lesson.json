@@ -1,0 +1,499 @@
+{
+    "title": "Time - Part 1",
+    "activities": [
+        {
+            "type": "multipleChoiceWords",
+            "words": [
+                {
+                    "text": "开始",
+                    "correctAnswer": "begin",
+                    "incorrectAnswers": [
+                        "open",
+                        "close",
+                        "end",
+                        "prepare"
+                    ]
+                },
+                {
+                    "text": "上课",
+                    "correctAnswer": "have classes",
+                    "incorrectAnswers": [
+                        "begin",
+                        "end",
+                        "open",
+                        "close"
+                    ]
+                },
+                {
+                    "text": "开门",
+                    "correctAnswer": "open",
+                    "incorrectAnswers": [
+                        "begin",
+                        "end",
+                        "close",
+                        "prepare"
+                    ]
+                },
+                {
+                    "text": "关门",
+                    "correctAnswer": "close",
+                    "incorrectAnswers": [
+                        "begin",
+                        "end",
+                        "open",
+                        "prepare"
+                    ]
+                },
+                {
+                    "text": "起床",
+                    "correctAnswer": "get up",
+                    "incorrectAnswers": [
+                        "go to sleep",
+                        "start class",
+                        "finish class",
+                        "finish work"
+                    ]
+                },
+                {
+                    "text": "睡觉",
+                    "correctAnswer": "go to sleep",
+                    "incorrectAnswers": [
+                        "get up",
+                        "start class",
+                        "finish class",
+                        "finish work"
+                    ]
+                },
+                {
+                    "text": "休息",
+                    "correctAnswer": "have a break",
+                    "incorrectAnswers": [
+                        "get up",
+                        "start class",
+                        "finish class",
+                        "finish work"
+                    ]
+                },
+                {
+                    "text": "下课",
+                    "correctAnswer": "finish class",
+                    "incorrectAnswers": [
+                        "get up",
+                        "start class",
+                        "have a break",
+                        "finish work"
+                    ]
+                },
+                {
+                    "text": "下班",
+                    "correctAnswer": "finish work",
+                    "incorrectAnswers": [
+                        "get up",
+                        "start class",
+                        "have a break",
+                        "finish class"
+                    ]
+                },
+                {
+                    "text": "吃早饭",
+                    "correctAnswer": "have breakfast",
+                    "incorrectAnswers": [
+                        "have lunch",
+                        "have tea",
+                        "get up",
+                        ""
+                    ]
+                },
+                {
+                    "text": "吃午饭",
+                    "correctAnswer": "have lunch",
+                    "incorrectAnswers": [
+                        "have breakfast",
+                        "have tea",
+                        "get up",
+                        ""
+                    ]
+                },
+                {
+                    "text": "吃晚饭",
+                    "correctAnswer": "have tea",
+                    "incorrectAnswers": [
+                        "have lunch",
+                        "have breakfast",
+                        "get up",
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "multipleChoiceSentences",
+            "sentences": [
+                {
+                    "text": "几点了",
+                    "correctAnswer": "What time is it?",
+                    "incorrectAnswers": [
+                        "What time was it?",
+                        "How many are there?",
+                        "How many were there?"
+                    ]
+                },
+                {
+                    "text": "现在几点了",
+                    "correctAnswer": "What time is it?",
+                    "incorrectAnswers": [
+                        "What time was it?",
+                        "How many are there?",
+                        "How many were there?",
+                        "Where are we meeting?",
+                        "Where is it?",
+                        "Where was it?"
+                    ]
+                },
+                {
+                    "text": "现在几点",
+                    "correctAnswer": "What time is it?",
+                    "incorrectAnswers": [
+                        "What time was it?",
+                        "How many are there?",
+                        "How many were there?",
+                        "Where are we meeting?",
+                        "Where is it?",
+                        "Where was it?"
+                    ]
+                },
+                {
+                    "text": "现在十点",
+                    "correctAnswer": "It's ten o'clock.",
+                    "incorrectAnswers": [
+                        "It's eleven o'clock.",
+                        "It's four o'clock.",
+                        "They are here.",
+                        "There are ten of them.",
+                        "What time is it?"
+                    ]
+                },
+                {
+                    "text": "现在十一点",
+                    "correctAnswer": "It's eleven o'clock.",
+                    "incorrectAnswers": [
+                        "It's ten o'clock.",
+                        "It's twelve o'clock.",
+                        "It's four o'clock.",
+                        "They are here.",
+                        "There are eleven of them.",
+                        "What time is it?"
+                    ]
+                },
+                {
+                    "text": "图书馆几点开门",
+                    "correctAnswer": "What time does the library open?",
+                    "incorrectAnswers": [
+                        "What time does the library close?",
+                        "What time does the book shop open?",
+                        "What time does the book shop close?",
+                        "Where is the library?",
+                        "Where is the book shop?",
+                        "What time does the museum open?",
+                        "What time does the museum close?"
+                    ]
+                },
+                {
+                    "text": "图书馆几点关门",
+                    "correctAnswer": "What time does the library close?",
+                    "incorrectAnswers": [
+                        "What time does the library open?",
+                        "What time does the book shop open?",
+                        "What time does the book shop close?",
+                        "Where is the library?",
+                        "Where is the book shop?",
+                        "What time does the museum open?",
+                        "What time does the museum close?"
+                    ]
+                },
+                {
+                    "text": "银行几点开门",
+                    "correctAnswer": "What time does the bank open?",
+                    "incorrectAnswers": [
+                        "What time does the bank close?",
+                        "What time does the library open?",
+                        "What time does the library close?",
+                        "Where is the bank?",
+                        "Where is the train station?",
+                        "What time does the museum open?",
+                        "What time does the museum close?"
+                    ]
+                },
+                {
+                    "text": "银行几点关门",
+                    "correctAnswer": "What time does the bank close?",
+                    "incorrectAnswers": [
+                        "What time does the bank open?",
+                        "What time does the library open?",
+                        "What time does the library close?",
+                        "Where is the bank?",
+                        "Where is the train station?",
+                        "What time does the museum open?",
+                        "What time does the museum close?"
+                    ]
+                },
+                {
+                    "text": "书店几点开门",
+                    "correctAnswer": "What time does the book shop open?",
+                    "incorrectAnswers": [
+                        "What time does the book shop close?",
+                        "What time does the library open?",
+                        "What time does the library close?",
+                        "Where is the library?",
+                        "Where is the book shop?",
+                        "What time does the museum open?",
+                        "What time does the museum close?"
+                    ]
+                },
+                {
+                    "text": "书店几点关门",
+                    "correctAnswer": "What time does the book shop close?",
+                    "incorrectAnswers": [
+                        "What time does the book shop open?",
+                        "What time does the library open?",
+                        "What time does the library close?",
+                        "Where is the library?",
+                        "Where is the book shop?",
+                        "What time does the museum open?",
+                        "What time does the museum close?"
+                    ]
+                },
+                {
+                    "text": "图书馆什么时候开门",
+                    "correctAnswer": "When does the library open?",
+                    "incorrectAnswers": [
+                        "When does the library close?",
+                        "When does the book shop open?",
+                        "When does the book shop close?",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "图书馆什么时候关门",
+                    "correctAnswer": "When does the library close?",
+                    "incorrectAnswers": [
+                        "When does the library open?",
+                        "When does the book shop open?",
+                        "When does the book shop close?",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "银行什么时候开门",
+                    "correctAnswer": "When does the bank open?",
+                    "incorrectAnswers": [
+                        "When does the bank close?",
+                        "When does the library open?",
+                        "When does the library close?",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "银行什么时候关门",
+                    "correctAnswer": "When does the bank close?",
+                    "incorrectAnswers": [
+                        "When does the bank open?",
+                        "When does the library open?",
+                        "When does the library close?",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "你几点吃早饭",
+                    "correctAnswer": "What time do you eat breakfast?",
+                    "incorrectAnswers": [
+                        "What time do you eat lunch?",
+                        "What time do you have tea?",
+                        "Do you have breakfast at nine o'clock?",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "你几点吃午饭",
+                    "correctAnswer": "What time do you eat lunch?",
+                    "incorrectAnswers": [
+                        "What time do you eat breakfast?",
+                        "What time do you have tea?",
+                        "Do you have breakfast at nine o'clock?",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        }
+    ]
+}

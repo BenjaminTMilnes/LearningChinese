@@ -1,0 +1,503 @@
+{
+    "title": "Elections - Part 1",
+    "activities": [
+        {
+            "type": "verbConjugation",
+            "verbs":[
+                {
+                    "infinitive":"favḗre",
+                    "activeIndicativePresentFirstPersonSingular":"faveō",
+                    "activeIndicativePresentSecondPersonSingular":"favēs",
+                    "activeIndicativePresentThirdPersonSingular":"favet",
+                    "activeIndicativePresentFirstPersonPlural":"favḗmus",
+                    "activeIndicativePresentSecondPersonPlural":"favḗtis",
+                    "activeIndicativePresentThirdPersonPlural":"favent"
+                },
+                {
+                    "infinitive":"crḗdere",
+                    "activeIndicativePresentFirstPersonSingular":"crēdō",
+                    "activeIndicativePresentSecondPersonSingular":"crēdis",
+                    "activeIndicativePresentThirdPersonSingular":"crēdit",
+                    "activeIndicativePresentFirstPersonPlural":"crḗdimus",
+                    "activeIndicativePresentSecondPersonPlural":"crḗditis",
+                    "activeIndicativePresentThirdPersonPlural":"crēdunt"
+                },
+                {
+                    "infinitive":"scrī́bere",
+                    "activeIndicativePresentFirstPersonSingular":"scrībō",
+                    "activeIndicativePresentSecondPersonSingular":"scrībis",
+                    "activeIndicativePresentThirdPersonSingular":"scrībit",
+                    "activeIndicativePresentFirstPersonPlural":"scrī́bimus",
+                    "activeIndicativePresentSecondPersonPlural":"scrī́bitis",
+                    "activeIndicativePresentThirdPersonPlural":"scrībunt",
+                    "activeIndicativePerfectFirstPersonSingular":"scrīpsī",
+                    "activeIndicativePerfectSecondPersonSingular":"scrīpsístī",
+                    "activeIndicativePerfectThirdPersonSingular":"scrīpsit",
+                    "activeIndicativePerfectFirstPersonPlural":"scrīpsimus",
+                    "activeIndicativePerfectSecondPersonPlural":"scrīpsístis",
+                    "activeIndicativePerfectThirdPersonPlural":"scrīpsḗrunt"
+                },
+                {
+                    "infinitive":"légere",
+                    "activeIndicativePresentFirstPersonSingular":"legō",
+                    "activeIndicativePresentSecondPersonSingular":"legis",
+                    "activeIndicativePresentThirdPersonSingular":"legit",
+                    "activeIndicativePresentFirstPersonPlural":"légimus",
+                    "activeIndicativePresentSecondPersonPlural":"légitis",
+                    "activeIndicativePresentThirdPersonPlural":"legunt"
+                },
+                {
+                    "infinitive":"cōnspícere",
+                    "activeIndicativePresentFirstPersonSingular":"cōnspiciō",
+                    "activeIndicativePresentSecondPersonSingular":"cōnspicīs",
+                    "activeIndicativePresentThirdPersonSingular":"cōnspicit",
+                    "activeIndicativePresentFirstPersonPlural":"cōnspicī́mus",
+                    "activeIndicativePresentSecondPersonPlural":"cōnspicī́tis",
+                    "activeIndicativePresentThirdPersonPlural":"cōnspiciunt",
+                    "activeIndicativePerfectFirstPersonSingular":"cōnspexī",
+                    "activeIndicativePerfectSecondPersonSingular":"cōnspexístī",
+                    "activeIndicativePerfectThirdPersonSingular":"cōnspexit",
+                    "activeIndicativePerfectFirstPersonPlural":"cōnspeximus",
+                    "activeIndicativePerfectSecondPersonPlural":"cōnspexístis",
+                    "activeIndicativePerfectThirdPersonPlural":"cōnspexḗrunt"
+                },
+                {
+                    "infinitive":"dī́cere",
+                    "activeIndicativePresentFirstPersonSingular":"dīcō",
+                    "activeIndicativePresentSecondPersonSingular":"dīcis",
+                    "activeIndicativePresentThirdPersonSingular":"dīcit",
+                    "activeIndicativePresentFirstPersonPlural":"dī́cimus",
+                    "activeIndicativePresentSecondPersonPlural":"dī́citis",
+                    "activeIndicativePresentThirdPersonPlural":"dīcunt",
+                    "activeIndicativePerfectFirstPersonSingular":"dīxī",
+                    "activeIndicativePerfectSecondPersonSingular":"dīxístī",
+                    "activeIndicativePerfectThirdPersonSingular":"dīxit",
+                    "activeIndicativePerfectFirstPersonPlural":"dīximus",
+                    "activeIndicativePerfectSecondPersonPlural":"dīxístis",
+                    "activeIndicativePerfectThirdPersonPlural":"dīxḗrunt"
+                },
+                {
+                    "infinitive":"respondḗre",
+                    "activeIndicativePresentFirstPersonSingular":"respondeō",
+                    "activeIndicativePresentSecondPersonSingular":"respondēs",
+                    "activeIndicativePresentThirdPersonSingular":"respondet",
+                    "activeIndicativePresentFirstPersonPlural":"respondḗmus",
+                    "activeIndicativePresentSecondPersonPlural":"respondḗtis",
+                    "activeIndicativePresentThirdPersonPlural":"respondent",
+                    "activeIndicativePerfectFirstPersonSingular":"respondī",
+                    "activeIndicativePerfectSecondPersonSingular":"respondístī",
+                    "activeIndicativePerfectThirdPersonSingular":"respondit",
+                    "activeIndicativePerfectFirstPersonPlural":"respondimus",
+                    "activeIndicativePerfectSecondPersonPlural":"respondístis",
+                    "activeIndicativePerfectThirdPersonPlural":"respondḗrunt"
+                }
+            ]
+        },
+        {
+            "type": "multipleChoiceWords",
+            "fromLanguage": "latin",
+            "toLanguage": "english",
+            "words": [
+                {
+                    "text": "candidātus",
+                    "correctAnswer": "candidate",
+                    "incorrectAnswers": [ 
+                        "candor", 
+                        "candid", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "favent",
+                    "correctAnswer": "favour, give support to",
+                    "incorrectAnswers": [ 
+                        "believe", 
+                        "trust", 
+                        "distrust", 
+                        "dislike", 
+                        "hate"
+                    ]
+                },
+                {
+                    "text": "vir dīves",
+                    "correctAnswer": "a rich man",
+                    "incorrectAnswers": [ 
+                        "a good man", 
+                        "an honest man", 
+                        "a man of noble birth", 
+                        "a trustworthy man", 
+                        "a nice man"
+                    ]
+                },
+                {
+                    "text": "vir nōbilis",
+                    "correctAnswer": "a man of noble birth",
+                    "incorrectAnswers": [ 
+                        "a good man", 
+                        "an honest man", 
+                        "a trustworthy man", 
+                        "a nice man",
+                        "a rich man"
+                    ]
+                },
+                {
+                    "text": "crēdunt",
+                    "correctAnswer": "trust, have faith in",
+                    "incorrectAnswers": [ 
+                        "dislike", 
+                        "hate", 
+                        "distrust", 
+                        "favour", 
+                        "support"
+                    ]
+                },
+             
+                {
+                    "text": "gēns nostra",
+                    "correctAnswer": "our family",
+                    "incorrectAnswers": [ 
+                        "your family", 
+                        "his family", 
+                        "her family", 
+                        "my family", 
+                        "our friends"
+                    ]
+                },
+                {
+                    "text": "scrīptor",
+                    "correctAnswer": "sign-writer",
+                    "incorrectAnswers": [ 
+                        "author", 
+                        "official", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "cōnsilium",
+                    "correctAnswer": "plan, idea",
+                    "incorrectAnswers": [ 
+                        "policy", 
+                        "vote", 
+                        "speech", 
+                        "", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "mūrum",
+                    "correctAnswer": "wall",
+                    "incorrectAnswers": [ 
+                        "tapestry", 
+                        "painting", 
+                        "sign", 
+                        "banner", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "titulum",
+                    "correctAnswer": "notice, slogan",
+                    "incorrectAnswers": [ 
+                        "", 
+                        "", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                },
+                             {
+                    "text": "quod",
+                    "correctAnswer": "because",
+                    "incorrectAnswers": [ 
+                        "why", 
+                        "where", 
+                        "which", 
+                        "what", 
+                        "that"
+                    ]
+                },
+                {
+                    "text": "semper",
+                    "correctAnswer": "always",
+                    "incorrectAnswers": [ 
+                        "never", 
+                        "sometimes", 
+                        "often", 
+                        "seldom", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "subitō",
+                    "correctAnswer": "suddenly",
+                    "incorrectAnswers": [ 
+                        "slowly", 
+                        "quickly", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "stultus",
+                    "correctAnswer": "stupid",
+                    "incorrectAnswers": [ 
+                        "intelligent", 
+                        "stubborn", 
+                        "short", 
+                        "tall", 
+                        "impatient"
+                    ]
+                },
+                {
+                    "text": "stultissimus",
+                    "correctAnswer": "very stupid",
+                    "incorrectAnswers": [ 
+                        "very intelligent", 
+                        "very stubborn", 
+                        "very short", 
+                        "very tall", 
+                        "very impatient"
+                    ]
+                },
+                {
+                    "text": "postquam",
+                    "correctAnswer": "after",
+                    "incorrectAnswers": [ 
+                        "before", 
+                        "where", 
+                        "when", 
+                        "which", 
+                        "that"
+                    ]
+                },
+                {
+                    "text": "quoque",
+                    "correctAnswer": "also, too",
+                    "incorrectAnswers": [ 
+                        "then", 
+                        "after", 
+                        "why", 
+                        "how much", 
+                        "when"
+                    ]
+                },
+                {
+                    "text": "īrātus",
+                    "correctAnswer": "angry",
+                    "incorrectAnswers": [ 
+                        "stupid", 
+                        "intelligent", 
+                        "rich", 
+                        "wise", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "īrātior",
+                    "correctAnswer": "angrier",
+                    "incorrectAnswers": [ 
+                        "more stupid", 
+                        "more intelligent", 
+                        "richer", 
+                        "wiser", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "īrātissimus",
+                    "correctAnswer": "very angry",
+                    "incorrectAnswers": [ 
+                        "very stupid", 
+                        "very intelligent", 
+                        "very rich", 
+                        "very wise", 
+                        ""
+                    ]
+                },
+                {
+                    "text": "",
+                    "correctAnswer": "",
+                    "incorrectAnswers": [ 
+                        "", 
+                        "", 
+                        "", 
+                        "", 
+                        ""
+                    ]
+                }
+            ]
+         },
+         {"type":"multipleChoiceSentences",
+        "sentences":[
+            {
+                "text": "Tullius candidātus optimus est.",
+                "correctAnswer": "Tullius is the best candidate.",
+                "incorrectAnswers": [ 
+                    "Tullius is the worst candidate.", 
+                    "Tullius is a candidate.", 
+                    "Tullius is not a candidate.", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "Tullius est vir nōbilis.",
+                "correctAnswer": "Tullius is a man of noble birth.",
+                "incorrectAnswers": [ 
+                    "Tullius is a rich man.", 
+                    "Tullius is an honest man.", 
+                    "Tullius is a nice man.", 
+                    "Tullius is a good man.", 
+                    ""
+                ]
+            },
+            {
+                "text": "gēns nostra Tullio semper favet.",
+                "correctAnswer": "Our family always supports Tullius.",
+                "incorrectAnswers": [ 
+                    "Our family never supports Tullius.", 
+                    "My family always supports Tullius.", 
+                    "My family never supports Tullius.", 
+                    "Your family always supports Tullius.", 
+                    "Your family never supports Tullius."
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            },
+            {
+                "text": "",
+                "correctAnswer": "",
+                "incorrectAnswers": [ 
+                    "", 
+                    "", 
+                    "", 
+                    "", 
+                    ""
+                ]
+            }
+
+        ]}
+        ]
+}

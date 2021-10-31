@@ -117,7 +117,7 @@ class MultipleChoiceQuestionGenerator {
 
 class QuestionGenerator1 extends MultipleChoiceQuestionGenerator {
     constructor(){
-        this.chineseParameterSets = [["图书馆", "银行", "书店", "水果店"], ["开门", "关门"]];
+        this.chineseParameterSets = [["图书馆", "银行", "书店"], ["开门", "关门"]];
         this.chineseCorrectAnswer = "{1}几点{2}";
         this.chineseIncorrectAnswers = [];
 
@@ -125,274 +125,13 @@ class QuestionGenerator1 extends MultipleChoiceQuestionGenerator {
         this.chineseRomanisationCorrectAnswer = "";
         this.chineseRomanisationIncorrectAnswers = [];
 
-        this.englishParameterSets = [["library", "bank", "book shop", "fruit shop"], ["open", "close"]];
-        this.englishCorrectAnswer = "What time does the {1} {2}?"
-        this.englishIncorrectAnswers = [];
+        this.englishParameterSets = [["library", "bank", "book shop"], ["open", "close"]];
+        this.englishCorrectAnswer = "What time does the {1} {2}?";
+        this.englishIncorrectAnswers = [
+            "Where is the {1}?"
+        ];
     }
 
-}
-
-var content = {
-    "lessons": [
-        {
-            "activities": [
-                {
-                    "type": "multipleChoiceWords",
-                    "words": [
-                        {
-                            "text": "开始",
-                            "correctAnswer": "begin",
-                            "incorrectAnswers": ["open", "close", "end", "prepare"]
-                        },
-                        {
-                            "text": "上课",
-                            "correctAnswer": "have classes",
-                            "incorrectAnswers": ["begin", "end", "open", "close"]
-                        },
-                        {
-                            "text": "开门",
-                            "correctAnswer": "open",
-                            "incorrectAnswers": ["begin", "end", "close", "prepare"]
-                        },
-                        {
-                            "text": "关门",
-                            "correctAnswer": "close",
-                            "incorrectAnswers": ["begin", "end", "open", "prepare"]
-                        },
-                    ]
-                },
-                {
-                    "type": "multipleChoiceSentences",
-                    "sentences": [
-                        {
-                            "text": "几点了",
-                            "correctAnswer": "What time is it?",
-                            "incorrectAnswers": [
-                                "What time was it?",
-                                "How many are there?",
-                                "How many were there?"
-                            ]
-                        },
-                        {
-                            "text": "现在几点了",
-                            "correctAnswer": "What time is it?",
-                            "incorrectAnswers": [
-                                "What time was it?",
-                                "How many are there?",
-                                "How many were there?"
-                                , "Where are we meeting?",
-                                "Where is it?",
-                                "Where was it?"]
-                        },
-                        {
-                            "text": "现在几点",
-                            "correctAnswer": "What time is it?",
-                            "incorrectAnswers": [
-                                "What time was it?",
-                                "How many are there?",
-                                "How many were there?"
-                                , "Where are we meeting?",
-                                "Where is it?",
-                                "Where was it?"]
-                        },
-                        {
-                            "text": "现在十点",
-                            "correctAnswer": "It's ten o'clock.",
-                            "incorrectAnswers": [
-                                "It's eleven o'clock.",
-                                "It's four o'clock.",
-                                "They are here.",
-                                "There are ten of them.",
-                                "What time is it?"]
-                        },
-                        {
-                            "text": "现在十一点",
-                            "correctAnswer": "It's eleven o'clock.",
-                            "incorrectAnswers": [
-                                "It's ten o'clock.",
-                                "It's twelve o'clock.",
-                                "It's four o'clock.",
-                                "They are here.",
-                                "There are eleven of them.",
-                                "What time is it?"]
-                        },
-                        {
-                            "text": "图书馆几点开门",
-                            "correctAnswer": "What time does the library open?",
-                            "incorrectAnswers": [
-                                "What time does the library close?",
-                                "What time does the book shop open?",
-                                "What time does the book shop close?",
-                                "Where is the library?",
-                                "Where is the book shop?",
-                                "What time does the museum open?",
-                                "What time does the museum close?"]
-                        },
-                        {
-                            "text": "图书馆几点关门",
-                            "correctAnswer": "What time does the library close?",
-                            "incorrectAnswers": [
-                                "What time does the library open?",
-                                "What time does the book shop open?",
-                                "What time does the book shop close?",
-                                "Where is the library?",
-                                "Where is the book shop?",
-                                "What time does the museum open?",
-                                "What time does the museum close?"]
-                        },
-                        {
-                            "text": "银行几点开门",
-                            "correctAnswer": "What time does the bank open?",
-                            "incorrectAnswers": [
-                                "What time does the bank close?",
-                                "What time does the library open?",
-                                "What time does the library close?",
-                                "Where is the bank?",
-                                "Where is the train station?",
-                                "What time does the museum open?",
-                                "What time does the museum close?"]
-                        },
-                        {
-                            "text": "银行几点关门",
-                            "correctAnswer": "What time does the bank close?",
-                            "incorrectAnswers": [
-                                "What time does the bank open?",
-                                "What time does the library open?",
-                                "What time does the library close?",
-                                "Where is the bank?",
-                                "Where is the train station?",
-                                "What time does the museum open?",
-                                "What time does the museum close?"]
-                        },
-                        {
-                            "text": "书店几点开门",
-                            "correctAnswer": "What time does the book shop open?",
-                            "incorrectAnswers": [
-                                "What time does the book shop close?",
-                                "What time does the library open?",
-                                "What time does the library close?",
-                                "Where is the library?",
-                                "Where is the book shop?",
-                                "What time does the museum open?",
-                                "What time does the museum close?"]
-                        },
-                        {
-                            "text": "书店几点关门",
-                            "correctAnswer": "What time does the book shop close?",
-                            "incorrectAnswers": [
-                                "What time does the book shop open?",
-                                "What time does the library open?",
-                                "What time does the library close?",
-                                "Where is the library?",
-                                "Where is the book shop?",
-                                "What time does the museum open?",
-                                "What time does the museum close?"]
-                        },
-                        {
-                            "text": "图书馆什么时候开门",
-                            "correctAnswer": "When does the library open?",
-                            "incorrectAnswers": [
-                                "When does the library close?", 
-                                "When does the book shop open?", 
-                                "When does the book shop close?", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                ""
-                            ]
-                        },
-                        {
-                            "text": "图书馆什么时候关门",
-                            "correctAnswer": "When does the library close?",
-                            "incorrectAnswers": [
-                                "When does the library open?", 
-                                "When does the book shop open?", 
-                                "When does the book shop close?", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                ""
-                            ]
-                        },
-                        {
-                            "text": "银行什么时候开门",
-                            "correctAnswer": "When does the bank open?",
-                            "incorrectAnswers": [
-                                "When does the bank close?", 
-                                "When does the library open?", 
-                                "When does the library close?", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                ""
-                            ]
-                        },
-                        {
-                            "text": "银行什么时候关门",
-                            "correctAnswer": "When does the bank close?",
-                            "incorrectAnswers": [
-                                "When does the bank open?", 
-                                "When does the library open?", 
-                                "When does the library close?", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                ""
-                            ]
-                        },
-                        {
-                            "text": "",
-                            "correctAnswer": "",
-                            "incorrectAnswers": [
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                ""
-                            ]
-                        },
-                        {
-                            "text": "",
-                            "correctAnswer": "",
-                            "incorrectAnswers": [
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                "", 
-                                ""
-                            ]
-                        },
-                    ]
-                }
-            ]
-        }
-    ]
 }
 
 application.controller("MainController", ["$scope", "$rootScope", "$routeParams", "$timeout", function MainController($scope, $rootScope, $routeParams, $timeout) {
@@ -406,7 +145,7 @@ application.controller("MainController", ["$scope", "$rootScope", "$routeParams"
     $scope.a12 = new Audio("a1-2.mp3");
 
     $scope.newQuestion = function () {
-        var words = content.lessons[0].activities[1].sentences;
+        var words = content.lessons[0].activities[0].words;
         words = words.filter(w => w.text != "" && w.correctAnswer != "" && w.incorrectAnswers.filter(a => a != "").length > 0);
 
         var i = Math.round(Math.random() * (words.length - 1));
@@ -426,7 +165,7 @@ application.controller("MainController", ["$scope", "$rootScope", "$routeParams"
             "class": "multiplechoice-choice-selectable"
         });
 
-        $scope.activityType = "multipleChoiceSentences"
+        $scope.activityType = "multipleChoiceWords"
         $scope.questionText = word.text;
         $scope.choices = randomise(choices);
     }
